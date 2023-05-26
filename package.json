@@ -1,0 +1,11 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "dotenv": "^16.0.3",
+    "ethers": "^6.4.0",
+    "hardhat": "^2.14.0",
+    "web3-eth-abi": "^1.10.0",
+    "web3-utils": "^1.10.0"
+  }
+}
