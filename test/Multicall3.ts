@@ -32,9 +32,10 @@ describe("Multicall3", function () {
   const ensRegistryInterface = new Interface(['function resolver(bytes32) view returns (address)']);
   const wtonInterface = new Interface(['function swapToTON(uint256) returns (bool)']);
   console.log(wtonInterface)
-
+  let amount = 10000000
+  const wtonInterface2 = wtonInterface.encodeFunctionData('swapToTON', [amount])
+  console.log(wtonInterface2)
   // let amount = ethers.utils.parseUnits("1", 27);
-  let amount = 100000000
 
   const calls = [ 
     {
